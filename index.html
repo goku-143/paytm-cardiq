@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CardIQ concept prototype</title>
+<meta name="description" content="CardIQ: a concept prototype for a credit card value coach inside a bill-pay flow. Case study by Shubham Meena, IIM Lucknow.">
+<link rel="stylesheet" href="styles.css?v=2">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><span class="logo">IQ</span><div><b>CardIQ</b><small>Concept prototype · Paytm product case (Case 3: credit card spends analyzer)</small></div></div>
+  <div class="who">Shubham Meena · IIM Lucknow</div>
+</header>
+
+<main class="wrap">
+  <section class="device">
+    <div class="phone">
+      <div class="status"><span>9:41</span><span>Wed 11 Nov</span></div>
+      <div class="appbar"><button id="back" class="iconbtn" aria-label="Back" hidden>‹</button><span id="title">Credit card bill</span><span class="lvl" id="lvlBadge"></span></div>
+      <div class="screen" id="screen"></div>
+      <nav class="tabs" id="tabs">
+        <button data-s="bill"><i>₹</i>Bill pay</button>
+        <button data-s="report"><i>◔</i>Report</button>
+        <button data-s="goals"><i>◎</i>Milestones</button>
+        <button data-s="checkout"><i>⇄</i>Checkout</button>
+        <button data-s="data"><i>⚿</i>My data</button>
+      </nav>
+    </div>
+    <p class="note">All cards, amounts and benefit rules are <b>illustrative</b> (fictional banks, simplified rules) and computed live in your browser. Not affiliated with Paytm or any issuer.</p>
+  </section>
+
+  <aside class="guide">
+    <h2>Try it in 2 minutes</h2>
+    <div class="ctl">
+      <div class="lab">How much data has Rohan shared? <span class="hint">(the consent ladder)</span></div>
+      <div class="seg" id="levels">
+        <button data-l="0"><b>Level 0</b><span>Bill data only<br>(no new consent)</span></button>
+        <button data-l="1"><b>Level 1</b><span>+ picked card<br>variants</span></button>
+        <button data-l="2"><b>Level 2</b><span>+ uploaded<br>statements</span></button>
+      </div>
+      <p class="hint" id="lvlText"></p>
+    </div>
+    <ol class="steps" id="steps">
+      <li data-go="bill"><b>Pay the bill, as today.</b> The entry point is the success screen Rohan already sees every month.</li>
+      <li data-go="report"><b>See earned vs missed.</b> At Level 2 every rupee shows its formula. Tap a card to see the transactions behind it.</li>
+      <li data-go="goals"><b>Milestones and expiry.</b> Fee waivers and milestones work from Level 1. Points expiry needs a statement (Level 2).</li>
+      <li data-go="checkout"><b>Best card at checkout.</b> Change the category and amount. The ranking respects caps already used this month. Pay, and watch the milestones move.</li>
+      <li data-go="data"><b>Trust and control.</b> One screen shows what is stored and lets him delete it.</li>
+    </ol>
+    <div class="why">
+      <h3>What this prototype is testing</h3>
+      <ul>
+        <li><b>Value in rupees, not charts:</b> "₹336 missed" is a reason to act.</li>
+        <li><b>Least data first:</b> useful at Level 0, better at each level.</li>
+        <li><b>Honest maths:</b> every number shows how it was computed, and nothing is sponsored.</li>
+      </ul>
+      <button class="reset" id="reset">Reset demo</button>
+    </div>
+  </aside>
+</main>
+<div class="toast" id="toast"></div>
+<script src="app.js?v=2"></script>
+</body>
+</html>
