@@ -2,6 +2,8 @@
 
 **Live demo:** https://goku-143.github.io/paytm-cardiq/
 
+**Case deck (PDF):** https://goku-143.github.io/paytm-cardiq/deck.pdf
+
 CardIQ is a product concept for a Paytm product case (Case 3: credit card spends analyzer). It is a monthly card coach that lives inside the credit card bill-pay flow and shows a multi-card user, in rupees:
 
 - what each card **earned** last month,

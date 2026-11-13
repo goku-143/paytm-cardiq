@@ -5,6 +5,9 @@ button{font:inherit;cursor:pointer}
 .top{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 24px;background:var(--navy);color:#fff}
 .brand{display:flex;gap:10px;align-items:center}
 .brand small{display:block;opacity:.8;font-size:12px}
+.hdr-r{display:flex;align-items:center;gap:16px}
+.deck{background:#fff;color:var(--navy);font-weight:700;font-size:13px;padding:7px 12px;border-radius:8px;text-decoration:none;white-space:nowrap}
+.deck:hover{background:var(--sky);color:#fff}
 .logo{background:var(--sky);color:var(--navy);font-weight:800;border-radius:8px;width:34px;height:34px;display:grid;place-items:center}
 .who{font-size:13px;opacity:.85}
 .wrap{display:grid;grid-template-columns:minmax(0,420px) minmax(0,1fr);gap:28px;max-width:1100px;margin:20px auto;padding:0 16px;align-items:start}
